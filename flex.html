@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>flex box</title>
+        <style>
+            .flex-container{
+                display: flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                justify-content: space-around;   
+                         
+            }
+
+            .flex1{
+                background:blue;
+                width: 10%;
+                padding: 20px;
+                
+            }
+
+            .flex1:first-of-type{
+                height: 150px;
+            }
+            .flex1:nth-of-type(2){
+              order: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+      <div class="flex-container">
+        <div class="flex1">flex1</div>
+        <div class="flex1">flex2</div>
+        <div class="flex1">flex3</div>
+    </div>  
+    </body>
+</html>
